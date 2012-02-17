@@ -1,0 +1,169 @@
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/stringToDisplay = 'Details of Registration/stringToDisplay = 'Подробности регистрации устройства/g" $1
+sed -i "s/'sTitle': 'Details'/'sTitle': 'Подробности'/g" $1
+sed -i "s/'sTitle': 'Time'/'sTitle': 'Время'/g" $1
+sed -i "s/'sTitle': 'Date'/'sTitle': 'Дата'/g" $1
+sed -i "s/'sTitle': 'Port'/'sTitle': 'Порт'/g" $1
+sed -i "s/'sTitle': 'Username'/'sTitle': 'Пользователь'/g" $1
+sed -i "s/label: 'Time Of Day'/label: 'Время дня'/g" $1
+sed -i "s/label: 'Registrations'/label: 'Регистрации'/g" $1
+sed -i "s/label: 'Users'/label: 'Пользователи'/g" $1
+sed -i "s/label: 'Devices'/label: 'Устройства'/g" $1
+sed -i "s/label: 'Media'/label: 'Медиа'/g" $1
+sed -i "s/label: 'Voicemail Boxes'/label: 'Голосовая почта'/g" $1
+sed -i "s/'Add User'/'Создать'/g" $1
+sed -i "s/'Add Account'/'Создать'/g" $1
+sed -i "s/'Add Callflow'/'Создать'/g" $1
+sed -i "s/'Add Resource'/'Создать'/g" $1
+sed -i "s/'Add Conference'/'Создать'/g" $1
+sed -i "s/'Add Device'/'Создать'/g" $1
+sed -i "s/'Add Time of Day'/'Создать'/g" $1
+sed -i "s/'Add Voicemail Box'/'Создать'/g" $1
+sed -i "s/'Add Menu'/'Создать'/g" $1
+sed -i "s/'Add Media'/'Создать'/g" $1
+sed -i "s/'Logout'/'Выйти'/g" $1
+sed -i "s/'Conferences'/'Конференции'/g" $1
+sed -i "s/'Update Call-Forward'/'Изменить настройки'/g" $1
+sed -i "s/'Enable Call-Forward'/'Включить переадресацию'/g" $1
+sed -i "s/'Disable Call-Forward'/'Выключить переадресацию'/g" $1
+sed -i "s/'Toggle Call-Forward'/'Переключить переадресацию'/g" $1
+sed -i "s/'Toggle Call-Forward'/'Переключить переадресацию'/g" $1
+sed -i "s/'Call-Forward'/'Переадресация вызова'/g" $1
+sed -i "s/'Feature Codes'/'Функции'/g" $1
+sed -i "s/'Resources'/'Ресурсы'/g" $1
+sed -i "s/'Callflows'/'Распределение'/g" $1
+sed -i "s/'VoIP Services'/'Голосовые услуги'/g" $1
+sed -i "s/Realm of this account/Домен этой учетной записи/g" $1
+sed -i "s/Name of this account/Имя этой учетной записи/g" $1
+sed -i "s/'Please confirm'/'Пожалуйста подтвердите'/g" $1
+sed -i "s/'Are you sure that you want to log out?'/'Вы уверены, что хотите завершить работу?'/g" $1
+sed -i "s/'Accounts'/'Учетные записи'/g" $1
+sed -i "s/'Menus'/'Меню'/g" $1
+sed -i "s/'Lowest'/'Самый низкий'/g" $1
+sed -i "s/'Low'/'Низкий'/g" $1
+sed -i "s/'Normal'/'Средний'/g" $1
+sed -i "s/'High'/'Высокий'/g" $1
+sed -i "s/'Highest'/'Самый высокий'/g" $1
+sed -i 's/>Basic Settings</>Основные настройки</g' $1
+sed -i 's/>Advanced Settings</>Дополнительно</g' $1
+sed -i 's/>Priority:</>Приоритет:</g' $1
+sed -i 's/>Options</>Установки</g' $1
+sed -i 's/>Gateway Codecs</>Кодеки</g' $1
+sed -i 's/>Caller-ID Options</>Настройки АОН</g' $1
+sed -i 's/>Save</>Сохранить</g' $1
+sed -i 's/>Delete</>Удалить</g' $1
+sed -i 's/>Login \/ Register</>Войти \/ Зарегистрироваться</g' $1
+sed -i 's/>Logout</>Выйти</g' $1
+sed -i 's/"Logout"/"Выйти"/g' $1
+sed -i 's/"Login"/"Войти"/g' $1
+sed -i "s/'Login'/'Войти'/g" $1
+sed -i 's/>OK</>Да</g' $1
+sed -i 's/>Cancel</>Отменить</g' $1
+sed -i 's/>Login</>Войти</g' $1
+sed -i 's/>Help</>Помощь</g' $1
+sed -i 's/>Name:</>Имя:</g' $1
+sed -i 's/>Create Account</>Создать учетную запись</g' $1
+sed -i 's/>Edit Account</>Редактировать учетную запись</g' $1
+sed -i 's/>Realm (unique):</>Реалм (уникальный):</g' $1
+sed -i 's/>Use account</>Войти</g' $1
+sed -i 's/"VoIP Services"/"Голосовые услуги"/g' $1
+sed -i 's/>Feature Codes</>Функции</g' $1
+sed -i 's/>Enable Call-Forward ?</>Включить переадресацию?</g' $1
+sed -i 's/>Manage Conferences</>Управление конференциями</g' $1
+sed -i 's/>Create Conference</>Создать конференцию</g' $1
+sed -i 's/>Edit Conference</>Настроить конференцию</g' $1
+sed -i 's/>Conference Name:</>Название конференции:</g' $1
+sed -i 's/>Assign To:</>Принадлежит пользователю:</g' $1
+sed -i 's/>PINs:</>Пин Коды:</g' $1
+sed -i 's/>Numbers:</>Номера:</g' $1
+sed -i 's/>Conference server</>Сервер конференций</g' $1
+sed -i 's/>Play name upon entry?</>Анонсировать имя при подключении?</g' $1
+sed -i 's/>Join the conference muted?</>Подключаться с выключенным микрофоном?</g' $1
+sed -i 's/>Join the conference deaf?</>Подключаться к конференции без звука?</g' $1
+sed -i 's/>Caller-ID</>АОН</g' $1
+sed -i 's/>Caller ID</>АОН</g' $1
+sed -i 's/>Equipment</>Оборудование</g' $1
+sed -i 's/>Call Forward</>Переадресация</g' $1
+sed -i 's/>Password management</>Изменить пароль</g' $1
+sed -i 's/>Hot Desking</>Профиль</g' $1
+sed -i 's/>Enable Hot Desking?</>Включить мобильный профиль?</g' $1
+sed -i 's/>Require PIN?</>Требуется PIN?</g' $1
+sed -i 's/>Keep logged in elsewhere?</>Оставлять устройства зарегистрированными?</g' $1
+sed -i 's/>Device Name/>Название устройства/g' $1
+sed -i 's/>Status</>Статус</g' $1
+sed -i 's/>Actions/>Действия/g' $1
+sed -i 's/>There is currently no devices linked to this user</>В данный момент подключенных устройств нет</g' $1
+sed -i 's/>Add a new device for this user</>Подключить новое устройство этому пользователю</g' $1
+sed -i 's/>Username:</>Пользователь:</g' $1
+sed -i 's/>Username</>Пользователь</g' $1
+sed -i 's/>Date</>Дата</g' $1
+sed -i 's/>Time</>Время</g' $1
+sed -i 's/>Details</>Подробности</g' $1
+sed -i 's/>First Name:</>Имя:</g' $1
+sed -i 's/>Last Name:</>Фамилия:</g' $1
+sed -i 's/>Email Address:</>Email:</g' $1
+sed -i 's/>User privilege level:</>Тип пользовтеля:</g' $1
+sed -i 's/>Voicemail-to-Email</>Голосовая почта на Email</g' $1
+sed -i 's/>Voicemail-to-Email?</>Голосовая почта на Email?</g' $1
+sed -i 's/>Refresh</>Обновить</g' $1
+sed -i 's/>Close</>Закрыть</g' $1
+sed -i 's/>In-House Calls</>Внутренние звонки</g' $1
+sed -i 's/>Outbound Calls</>Исходящие звонки</g' $1
+sed -i 's/>Media File:</>Медиа файл:</g' $1
+sed -i 's/>Media File: </>Медиа файл: </g' $1
+sed -i 's/>Streamable:</>Потоковое:</g' $1
+sed -i 's/>Create Time of Day</>Создать временной интервал</g' $1
+sed -i 's/>Edit Time of Day</>Настроить временной интервал</g' $1
+sed -i 's/>Caller ID Name:</>Имя звонящего:</g' $1
+sed -i 's/>Caller ID Number:</>Номер звонящего:</g' $1
+sed -i 's/>Voicemail-to-Email Template</>Voicemail-на-Email шаблон</g' $1
+sed -i 's/>Voicemail-to-Email</>Voicemail-на-Email</g' $1
+sed -i 's/>Template fields</>Поля шаблона</g' $1
+sed -i 's/>Support Number:</>Номер поддержки:</g' $1
+sed -i 's/>Support Email</>Email поддержки:</g' $1
+sed -i 's/>New password: </>Новый пароль: </g' $1
+sed -i 's/>Confirm password: </>Подтвердить пароль: </g' $1
+sed -i 's/>User has been verified?</>Ползователь проверен?</g' $1
+sed -i 's/>Time zone:</>Часовой пояс:</g' $1
+sed -i 's/>Music on hold:</>Ожидание (музыка):</g' $1
+sed -i 's/>Create User</>Создать пользователя</g' $1
+sed -i 's/>Edit User</>Настроить пользователя</g' $1
+sed -i 's/>Number to redirect calls to:</>Номер для переадресации:</g' $1
+sed -i 's/>Require Key Press?</>Требуется нажатие клавиши?</g' $1
+sed -i "s/>Bypass user's phones:</>Минуя телефоны пользователя:</g" $1
+sed -i 's/>Keep Caller ID?</>Сохранить АОН звонящего?</g' $1
+sed -i 's/>Direct Calls Only?</>Только прямые звонки?</g' $1
+sed -i 's/>Create Media</>Создать запись</g' $1
+sed -i 's/>Create media</>Создать запись</g' $1
+sed -i 's/>Create Device</>Создать</g' $1
+sed -i 's/>Create</>Создать</g' $1
+sed -i 's/>Number:</>Номер:</g' $1
+sed -i 's/>Enabled:</>Активировано:</g' $1
+sed -i 's/>Device Nickname:</>Ник устройства:</g' $1
+sed -i 's/>Device MAC Address:</>MAC адрес устройства:</g' $1
+sed -i 's/>SIP Settings</>Настройки SIP</g' $1
+sed -i 's/>Audio</>Аудио</g' $1
+sed -i 's/>Video</>Видео</g' $1
+sed -i 's/>Fax</>Факс</g' $1
+sed -i 's/>Password:</>Пароль:</g' $1
+sed -i 's/>Invite Format:</>Invite формат:</g' $1
+sed -i 's/>Expire Seconds:</>Expire, сек:</g' $1
+sed -i 's/>Password</>Пароль</g' $1
+sed -i 's/>Account Name</>Учетная запись</g' $1
+#sed -i 's/></></g' $1
+#sed -i 's/></></g' $1
+#sed -i 's/></></g' $1
+#sed -i 's/></></g' $1
+#sed -i 's/></></g' $1
+#sed -i 's/></></g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+sed -i 's/"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries"/"sInfo": "Показано _START_ до _END_ из _TOTAL_ записей"/g' $1
+sed -i 's/"sInfoEmpty": "Showing 0 to 0 of 0 entries"/"sInfoEmpty": "Показано 0 записей"/g' $1
+sed -i 's/"sEmptyTable": "No data available in table"/"sEmptyTable": "Данные отсутствуют"/g' $1
+sed -i 's/"Feature Codes"/"Функции"/g' $1
