@@ -1,4 +1,11 @@
 ###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/Forgot your password?/Забыли пароль?/g" $1
+sed -i "s/Remember me/Запомнить меня/g" $1
 sed -i "s/>Login \/ Email</>Логин</g" $1
 sed -i "s/>*Login \/ Email:</>*Логин:</g" $1
 sed -i "s/stringToDisplay = 'Details of Registration/stringToDisplay = 'Подробности регистрации устройства/g" $1
