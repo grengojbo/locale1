@@ -4,6 +4,15 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/Make calls in minutes!/Настройка за минуту!/g" $1
+sed -i "s/Free demo account/Бесплатная демо/g" $1
+sed -i "s/Easy to start/Легко подключиться/g" $1
+sed -i "s/Are you a new user?/Зарегистрируйтесь!/g" $1
+sed -i "s/>LOG IN</>Войти</g" $1
+sed -i "s/>Welcome to the \${company_name} platform.</>Добро пожаловать в Виртуальный офис ОнНет.</g" $1
 sed -i "s/Forgot your password?/Забыли пароль?/g" $1
 sed -i "s/Remember me/Запомнить меня/g" $1
 sed -i "s/>Login \/ Email</>Логин</g" $1
@@ -170,7 +179,7 @@ sed -i 's/>Account Name</>Учетная запись</g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
-###sed -i 's///g' $1
+sed -i 's/<a href="http:\/\/www.2600hz.com" target="_blank">LEARN MORE<\/a>/<a href="http:\/\/onnet.su\/2600hzaward" target="_blank">О ПЛАТФОРМЕ<\/a>/g' $1
 sed -i 's/"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries"/"sInfo": "Показано _START_ до _END_ из _TOTAL_ записей"/g' $1
 sed -i 's/"sInfoEmpty": "Showing 0 to 0 of 0 entries"/"sInfoEmpty": "Показано 0 записей"/g' $1
 sed -i 's/"sEmptyTable": "No data available in table"/"sEmptyTable": "Данные отсутствуют"/g' $1
