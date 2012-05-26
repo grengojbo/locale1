@@ -6,13 +6,13 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
+sed -i "s/label: 'Carriers'/label: 'Операторы'/g" $1
 sed -i "s/Make calls in minutes!/Настройка за минуту!/g" $1
-sed -i "s/Free demo account/Бесплатная демо/g" $1
+sed -i "s/Free demo account/Демо бесплатно/g" $1
 sed -i "s/Easy to start/Легко подключиться/g" $1
 sed -i "s/Are you a new user?/Зарегистрируйтесь!/g" $1
 sed -i "s/>LOG IN</>Войти</g" $1
-sed -i "s/>Welcome to the \${company_name} platform.</>Добро пожаловать в Виртуальный офис ОнНет.</g" $1
+sed -i "s/>Welcome to the \${company_name} platform.</>Добро пожаловать в Виртуальный офис ОнНет</g" $1
 sed -i "s/Forgot your password?/Забыли пароль?/g" $1
 sed -i "s/Remember me/Запомнить меня/g" $1
 sed -i "s/>Login \/ Email</>Логин</g" $1
