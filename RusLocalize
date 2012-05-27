@@ -3,7 +3,7 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
-sed -i "s/>Cellphone / Landline</>Сотовый / ГТС</g" $1
+sed -i "s/>Cellphone \/ Landline</>Сотовый \/ ГТС</g" $1
 sed -i "s/>Softphone</>Софтфон</g" $1
 sed -i "s/>SIP Device</>SIP устройство</g" $1
 sed -i "s/>Create Device</>Создать устройство</g" $1
