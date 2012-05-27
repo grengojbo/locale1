@@ -1,10 +1,12 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
+sed -i "s/>Callflow</>Маршрут</g" $1
+sed -i "s/>Name</>Название</g" $1
+sed -i "s/>User</>Пользователь</g" $1
+sed -i "s/>Add User</>Добавить пользователя</g" $1
+sed -i "s/>Edit Directory</>Редактировать справочник</g" $1
+sed -i "s/>Create Directory</>Создать справочник</g" $1
 sed -i "s/new_entity_label: 'Add Directory'/new_entity_label: 'Добавить справочник'/g" $1
 sed -i "s/label: 'Queue'/label: 'Очередь'/g" $1
 sed -i "s/label: 'Queues'/label: 'Очереди'/g" $1
@@ -17,7 +19,7 @@ sed -i "s/label: 'Account Details'/label: 'Общие настройки'/g" $1
 sed -i "s/We'll send you a link to reset your password./Вам будет отправлена ссылка для восстановления пароля./g" $1
 sed -i "s/Please input a login, and either an account name, an account realm or a phone number linked to your account./Пожалуйста введите логин и название учетной записи, реалм или подключенный номер телефона./g" $1
 sed -i "s/>Recover</>Восстановить</g" $1
-sed -i "s/title: 'Recover Password'</title: 'Восстановить пароль'/g" $1
+sed -i "s/title: 'Recover Password'/title: 'Восстановить пароль'/g" $1
 sed -i "s/label: 'Carriers'/label: 'Операторы'/g" $1
 sed -i "s/Make calls in minutes!/Настройка за минуту!/g" $1
 sed -i "s/Free demo account/Бесплатный тест/g" $1
@@ -61,7 +63,7 @@ sed -i "s/'Toggle Call-Forward'/'Переключить переадресаци
 sed -i "s/'Call-Forward'/'Переадресация вызова'/g" $1
 sed -i "s/'Feature Codes'/'Функции'/g" $1
 sed -i "s/'Resources'/'Ресурсы'/g" $1
-sed -i "s/'Callflows'/'Распределение'/g" $1
+sed -i "s/'Callflows'/'Маршрутизация'/g" $1
 sed -i "s/'VoIP Services'/'Голосовые услуги'/g" $1
 sed -i "s/Realm of this account/Домен этой учетной записи/g" $1
 sed -i "s/Name of this account/Имя этой учетной записи/g" $1
