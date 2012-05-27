@@ -1,8 +1,23 @@
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
+sed -i "s/btn.html('Show All')/btn.html('Показать всё')/g" $1
+sed -i "s/btn.html('Show')/btn.html('Показать')/g" $1
+sed -i "s/btn.html('Hide All')/btn.html('Скрыть всё')/g" $1
+sed -i "s/btn.html('Hide')/btn.html('Скрыть')/g" $1
+sed -i "s/>Disabled: </>Отключено: </g" $1
+sed -i "s/>Unregistered: </>Офлайн: </g" $1
+sed -i "s/>Registered: </>Онлайн: </g" $1
+sed -i "s/>Devices</>Устройства</g" $1
+sed -i "s/>Numbers</>Ресурсы</g" $1
+sed -i "s/>Account Info</>Информация об учетной записи</g" $1
+sed -i "s/Welcome to your VoIP Services Dashboard/Добро пожаловать в панель управления/g" $1
+sed -i "s/>You are currently using the API on </>Вы подключены к API на </g" $1
+sed -i "s/>Add this user to the queue</>Добавить этого пользователя в очередь</g" $1
+sed -i "s/>Add this user to the directory</>Добавить этого пользователя в справочник</g" $1
+sed -i "s/>Remove</>Удалить</g" $1
 sed -i "s/>Callflow</>Маршрут</g" $1
+sed -i "s/>Callflows</>Маршруты</g" $1
 sed -i "s/>Name</>Название</g" $1
+sed -i "s/>Users</>Пользователи</g" $1
 sed -i "s/>User</>Пользователь</g" $1
 sed -i "s/>Add User</>Добавить пользователя</g" $1
 sed -i "s/>Edit Directory</>Редактировать справочник</g" $1
@@ -51,6 +66,7 @@ sed -i "s/'Add Conference'/'Создать'/g" $1
 sed -i "s/'Add Device'/'Создать'/g" $1
 sed -i "s/'Add Time of Day'/'Создать'/g" $1
 sed -i "s/'Add Voicemail Box'/'Создать'/g" $1
+sed -i "s/>Voicemail Boxes</>Ящики голосовой почты</g" $1
 sed -i "s/'Add Menu'/'Создать'/g" $1
 sed -i "s/'Add Media'/'Создать'/g" $1
 sed -i "s/'Logout'/'Выйти'/g" $1
@@ -104,6 +120,8 @@ sed -i 's/>Enable Call-Forward ?</>Включить переадресацию?<
 sed -i 's/>Manage Conferences</>Управление конференциями</g' $1
 sed -i 's/>Create Conference</>Создать конференцию</g' $1
 sed -i 's/>Edit Conference</>Настроить конференцию</g' $1
+sed -i 's/>Active feature codes</>Активные функциональные коды</g' $1
+sed -i 's/>Conferences</>Конференции</g' $1
 sed -i 's/>Conference Name:</>Название конференции:</g' $1
 sed -i 's/>Assign To:</>Принадлежит пользователю:</g' $1
 sed -i 's/>PINs:</>Пин Коды:</g' $1
@@ -191,8 +209,8 @@ sed -i 's/>Account Name</>Учетная запись</g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
-###sed -i 's///g' $1
-###sed -i 's///g' $1
+sed -i 's/>Callflow&nbsp/>Маршрут&nbsp/g' $1
+sed -i 's/>User&nbsp/>Пользователь&nbsp/g' $1
 sed -i 's/<a href="http:\/\/www.2600hz.com" target="_blank">LEARN MORE<\/a>/<a href="http:\/\/onnet.su\/2600hzaward" target="_blank">О ПЛАТФОРМЕ<\/a>/g' $1
 sed -i 's/"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries"/"sInfo": "Показано _START_ до _END_ из _TOTAL_ записей"/g' $1
 sed -i 's/"sInfoEmpty": "Showing 0 to 0 of 0 entries"/"sInfoEmpty": "Показано 0 записей"/g' $1
