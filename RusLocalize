@@ -1,4 +1,17 @@
 ###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/>Direct sub-accounts: </>Зависимые напрямую: </g" $1
+sed -i "s/>Sub-accounts: </>Зависимые: </g" $1
+sed -i "s/>User privilege level</>Уровень доступа</g" $1
+sed -i "s/>First Name</>Имя</g" $1
+sed -i "s/>Last Name</>Фамилия</g" $1
+sed -i "s/>Account ID:</>ID:</g" $1
+sed -i "s/>Account Realm:</>Реалм:</g" $1
+sed -i "s/>Carrier: </>Оператор связи: </g" $1
+sed -i "s/Support Contact: </Поддержка: </g" $1
+sed -i "s/>Account: </>Учетная запись: </g" $1
 sed -i "s/btn.html('Show All')/btn.html('Показать всё')/g" $1
 sed -i "s/btn.html('Show')/btn.html('Показать')/g" $1
 sed -i "s/btn.html('Hide All')/btn.html('Скрыть всё')/g" $1
@@ -120,7 +133,7 @@ sed -i 's/>Enable Call-Forward ?</>Включить переадресацию?<
 sed -i 's/>Manage Conferences</>Управление конференциями</g' $1
 sed -i 's/>Create Conference</>Создать конференцию</g' $1
 sed -i 's/>Edit Conference</>Настроить конференцию</g' $1
-sed -i 's/>Active feature codes</>Активные функциональные коды</g' $1
+sed -i 's/>Active feature codes</>Функциональные коды</g' $1
 sed -i 's/>Conferences</>Конференции</g' $1
 sed -i 's/>Conference Name:</>Название конференции:</g' $1
 sed -i 's/>Assign To:</>Принадлежит пользователю:</g' $1
