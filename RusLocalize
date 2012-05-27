@@ -2,6 +2,13 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/>Cellphone / Landline</>Сотовый / ГТС</g" $1
+sed -i "s/>Softphone</>Софтфон</g" $1
+sed -i "s/>SIP Device</>SIP устройство</g" $1
+sed -i "s/>Create Device</>Создать устройство</g" $1
+sed -i "s/>Warning</>Предупреждение</g" $1
+sed -i "s/>Info</>Информация</g" $1
 sed -i "s/>Direct sub-accounts: </>Зависимые напрямую: </g" $1
 sed -i "s/>Sub-accounts: </>Зависимые: </g" $1
 sed -i "s/>User privilege level</>Уровень доступа</g" $1
