@@ -20,7 +20,7 @@ sed -i "s/>Disabled: </>Отключено: </g" $1
 sed -i "s/>Unregistered: </>Офлайн: </g" $1
 sed -i "s/>Registered: </>Онлайн: </g" $1
 sed -i "s/>Devices</>Устройства</g" $1
-sed -i "s/>Numbers</>Ресурсы</g" $1
+sed -i "s/>Numbers</>Используемые ресурсы</g" $1
 sed -i "s/>Account Info</>Информация об учетной записи</g" $1
 sed -i "s/Welcome to your VoIP Services Dashboard/Добро пожаловать в панель управления/g" $1
 sed -i "s/>You are currently using the API on </>Вы подключены к API на </g" $1
