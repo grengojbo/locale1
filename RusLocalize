@@ -5,14 +5,26 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
+sed -i "s/new_entity_label: 'Add Directory'/new_entity_label: 'Добавить справочник'/g" $1
+sed -i "s/label: 'Queue'/label: 'Очередь'/g" $1
+sed -i "s/label: 'Queues'/label: 'Очереди'/g" $1
+sed -i "s/label: 'Directory'/label: 'Справочник'/g" $1
+sed -i "s/title: 'Directory'/title: 'Справочник'/g" $1
+sed -i "s/label: 'Call History'/label: 'История звонков'/g" $1
+sed -i "s/>Basic</>Общие</g" $1
+sed -i "s/>Advanced</>Экспертные</g" $1
+sed -i "s/label: 'Account Details'/label: 'Общие настройки'/g" $1
+sed -i "s/We'll send you a link to reset your password./Вам будет отправлена ссылка для восстановления пароля./g" $1
+sed -i "s/Please input a login, and either an account name, an account realm or a phone number linked to your account./Пожалуйста введите логин и название учетной записи, реалм или подключенный номер телефона./g" $1
+sed -i "s/>Recover</>Восстановить</g" $1
+sed -i "s/title: 'Recover Password'</title: 'Восстановить пароль'/g" $1
 sed -i "s/label: 'Carriers'/label: 'Операторы'/g" $1
 sed -i "s/Make calls in minutes!/Настройка за минуту!/g" $1
-sed -i "s/Free demo account/Демо бесплатно/g" $1
+sed -i "s/Free demo account/Бесплатный тест/g" $1
 sed -i "s/Easy to start/Легко подключиться/g" $1
 sed -i "s/Are you a new user?/Зарегистрируйтесь!/g" $1
 sed -i "s/>LOG IN</>Войти</g" $1
-sed -i "s/>Welcome to the \${company_name} platform.</>Добро пожаловать в Виртуальный офис ОнНет</g" $1
+sed -i "s/>Welcome to the \${company_name} platform.</>Добро пожаловать в Виртуальный офис<br>ОнНет комьюникейшнс</g" $1
 sed -i "s/Forgot your password?/Забыли пароль?/g" $1
 sed -i "s/Remember me/Запомнить меня/g" $1
 sed -i "s/>Login \/ Email</>Логин</g" $1
