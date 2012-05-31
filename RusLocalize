@@ -3,7 +3,7 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
-sed -i "s/>Cellphone \/ Landline</>Сотовый \/ ГТС</g" $1
+sed -i "s/>Cellphone \/ Landline</>Сотовый \/Линия ГТС</g" $1
 sed -i "s/>Softphone</>Софтфон</g" $1
 sed -i "s/>SIP Device</>SIP устройство</g" $1
 sed -i "s/>Create Device</>Создать устройство</g" $1
@@ -19,6 +19,8 @@ sed -i "s/>Account Realm:</>Реалм:</g" $1
 sed -i "s/>Carrier: </>Оператор связи: </g" $1
 sed -i "s/Support Contact: </Поддержка: </g" $1
 sed -i "s/>Account: </>Учетная запись: </g" $1
+sed -i "s/>Show All</>Показать всё</g" $1
+sed -i "s/>Show</>Показать</g" $1
 sed -i "s/btn.html('Show All')/btn.html('Показать всё')/g" $1
 sed -i "s/btn.html('Show')/btn.html('Показать')/g" $1
 sed -i "s/btn.html('Hide All')/btn.html('Скрыть всё')/g" $1
