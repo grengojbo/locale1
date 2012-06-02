@@ -3,6 +3,31 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/>Add</>Добавить</g" $1
+sed -i "s/>Number</>Номер</g" $1
+sed -i "s/title: 'Add number'/title: 'Добавить номер'/g" $1
+sed -i "s/>Add number</>Добавить номер</g" $1
+sed -i "s/>Add a number</>Добавить номер</g" $1
+sed -i "s/>Directory</>Справочник</g" $1
+sed -i "s/>Advanced</>Экспертные</g" $1
+sed -i "s/>Basic</>Общие</g" $1
+sed -i "s/>Click to add number</>Добавить номер</g" $1
+sed -i "s/>When you dial...</>Набранный номер</g" $1
+sed -i "s/>Save changes</>Сохранить</g" $1
+sed -i "s/>Delete callflow</>Удалить маршрут</g" $1
+sed -i "s/>Use this account</>Переключиться</g" $1
+sed -i "s/>Masquerade one of your sub-accounts</>Переключиться в дочернюю учетную запись</g" $1
+sed -i "s/>Choose a sub-account</>Выберите дочернюю запись</g" $1
+sed -i "s/label: 'Switch Account'/label: 'Дочерние учетные записи'/g" $1
+sed -i "s/label: 'My Account'/label: 'Текущая учетная запись'/g" $1
+sed -i "s/title: 'My Account'/title: 'Текущая учетная запись'/g" $1
+sed -i "s/label: 'Sign out'/label: 'Завершить сеанс'/g" $1
 sed -i "s/>Cellphone \/ Landline</>Сотовый \/Линия ГТС</g" $1
 sed -i "s/>Softphone</>Софтфон</g" $1
 sed -i "s/>SIP Device</>SIP устройство</g" $1
