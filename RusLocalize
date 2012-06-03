@@ -3,7 +3,7 @@ sed -i "s/tip: 'Prompt the caller for a mailbox number and password so they can 
 sed -i "s/tip: 'Toggle Hot desking'/tip: 'Переключить Hot desking'/g" $1
 sed -i "s/tip: 'Disable Hot desking'/tip: 'Отключить Hot desking'/g" $1
 sed -i "s/tip: 'Enable Hot desking'/tip: 'Включить Hot desking'/g" $1
-sed -i "s/tip: 'Route calls to the phone network through a configured SIP provider, Google Voice or physical digital/analog line'/tip: 'Направить вызовы в телефонную сеть через настроеного в текущей учетной записи оператора'/g" $1
+sed -i "s/tip: 'Route calls to the phone network through a configured SIP provider, Google Voice or physical digital\/analog line'/tip: 'Направить вызовы в телефонную сеть через настроеного в текущей учетной записи оператора'/g" $1
 sed -i "s/tip: 'Route calls to the phone network through pre-configured service providers'/tip: 'Направить вызовы в телефонную сеть через преднастроеного в системе оператора'/g" $1
 sed -i "s/tip: 'Ask a caller to push a menu option or dial an extension number'/tip: 'Предложить абоненту выбрать опцию меню или набрать добавочный номер'/g" $1
 sed -i "s/tip: 'Play an audio file such as a greeting'/tip: 'Проиграть аудио файл в качестве голосового приветствия'/g" $1
