@@ -1,12 +1,47 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/>Emergency</>Экстренные службы - функционал не поддерживается. При осуществлении вызовов в городскую телефонную сеть используется номер звонящего установленный в разделе Исходящие звонки.</g" $1
+sed -i "s/>Caller ID Name</>Имя звонящего</g" $1
+sed -i "s/>Caller ID Number</>Номер звонящего</g" $1
+sed -i "s/The domain you want to use for this account./Домен, который Вы хотите использовать для этой учетной записи./g" $1
+sed -i "s/The company name that you want to display wherever a company name is used in the GUI./Название компании, которую Вы хотите обозначить в качестве предоставляющей данную услугу./g" $1
+sed -i 's/"Domain"/"Домен"/g' $1
+sed -i "s/>Domain</>Домен</g" $1
+sed -i 's/"Company Name"/"Название компании"/g' $1
+sed -i "s/>Company Name</>Название компании</g" $1
+sed -i 's/"Email to notify"/"Email для уведомлений"/g' $1
+sed -i "s/>Email to notify</>Email</g" $1
+sed -i "s/Notify on de-register/Уведомить при потере регистрации/g" $1
+sed -i "s/>This Parent Account</>Счет родительской учетной записи</g" $1
+sed -i "s/>This Account itself</>Счет этой учетной записи</g" $1
+sed -i "s/>Billing Account</>Лицевой счет</g" $1
+sed -i "s/In order to see these changes, refresh the page!/Для того, чтобы изменения были отображены, страницу необходимо обновить!/g" $1
+sed -i "s/There were errors on the form, please correct!/В форме присутствуют ошибки, пожалуйста, исправьте!/g" $1
 sed -i 's/"Service Provider"/"Поставщик услуги"/g' $1
 sed -i "s/>Service Provider: </>Поставщик услуги: </g" $1
 sed -i "s/>Service Provider</>Поставщик услуги</g" $1
 sed -i 's/"Service Name"/"Название услуги"/g' $1
+sed -i "s/Input the service provider/Введите поставщика услуги/g" $1
+sed -i "s/Input the service name/Введите название услуги/g" $1
 sed -i "s/>Service Name: </>Название услуги: </g" $1
 sed -i "s/>Service Name</>Название услуги</g" $1
 sed -i "s/This will be displayed as the Send form field in the Voicemail-To-Email template/Это значение будет указано в качестве отправителя письма с сообщением Голосовой почты/g" $1
+sed -i 's/Input the Service URL/Введите адрес услуги (URL)/g' $1
 sed -i 's/"Service URL"/"Адрес услуги (URL)"/g' $1
 sed -i "s/>Service URL: </>Адрес услуги (URL): </g" $1
 sed -i "s/>Service URL</>Адрес услуги (URL)</g" $1
@@ -270,6 +305,16 @@ sed -i 's/>Account Name</>Учетная запись</g' $1
 #sed -i 's/></></g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+sed -i 's/"555-555-5555"/"78121234567"/g' $1
+sed -i 's/"Name"/"Название"/g' $1
+sed -i 's/"Realm (unique)"/"Realm (уникальный)"/g' $1
 sed -i 's/"Support Number"/"Номер поддержки"/g' $1
 sed -i 's/>Callflow&nbsp/>Маршрут&nbsp/g' $1
 sed -i 's/>User&nbsp/>Пользователь&nbsp/g' $1
