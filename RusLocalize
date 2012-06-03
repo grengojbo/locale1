@@ -1,20 +1,32 @@
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
+sed -i "s/tip: 'Prompt the caller for a mailbox number and password so they can check voicemails'/tip: 'Запросить у абонента номер ящика и пароль с тем, чтобы он мог прослушать голосовую почту'/g" $1
+sed -i "s/tip: 'Toggle Hot desking'/tip: 'Переключить Hot desking'/g" $1
+sed -i "s/tip: 'Disable Hot desking'/tip: 'Отключить Hot desking'/g" $1
+sed -i "s/tip: 'Enable Hot desking'/tip: 'Включить Hot desking'/g" $1
+sed -i "s/tip: 'Route calls to the phone network through a configured SIP provider, Google Voice or physical digital/analog line'/tip: 'Направить вызовы в телефонную сеть через настроеного в текущей учетной записи оператора'/g" $1
+sed -i "s/tip: 'Route calls to the phone network through pre-configured service providers'/tip: 'Направить вызовы в телефонную сеть через преднастроеного в системе оператора'/g" $1
+sed -i "s/tip: 'Ask a caller to push a menu option or dial an extension number'/tip: 'Предложить абоненту выбрать опцию меню или набрать добавочный номер'/g" $1
+sed -i "s/tip: 'Play an audio file such as a greeting'/tip: 'Проиграть аудио файл в качестве голосового приветствия'/g" $1
+sed -i "s/tip: 'Ask the caller to input the first letters of the name of the person that he wants to reach.'/tip: 'Предложить абоненту ввести начальные буквы имени персоны, с которой он хочет установить соединение.'/g" $1
+sed -i "s/tip: 'Transfer the caller to the conference call service, prompting for both a conference number and a pin'/tip: 'Перевод звонящего в сервис конференций с запросом номера конференции и кода авторизации'/g" $1
+sed -i "s/tip: 'DISA allows external callers to make outbound calls as though they originated from the system'/tip: 'DISA позволяет внешним абонентам совершать исходящие вызовы как если бы они являлись внутренним абонентом.'/g" $1
+sed -i "s/tip: 'Reset all the prepended texts before the Caller ID.'/tip: 'Удалить текстовую информацию перед номером звонящего.'/g" $1
+sed -i "s/tip: 'Prepend Caller ID with a text.'/tip: 'Добавить текстовую информацию к номеру звонящего.'/g" $1
+sed -i "s/tip: 'Set your CallerId by entering it on the phone'/tip: 'Установить номер звонящего путем набора его на телефоне'/g" $1
+sed -i "s/tip: 'Update the call forwarding number'/tip: 'Изменить номер переадресации'/g" $1
+sed -i "s/tip: 'Disable call forwarding'/tip: 'Отключить переадресацию'/g" $1
+sed -i "s/tip: 'Enable call forwarding (using the last forwaded number)'/tip: 'Включить переадресацию (Используя последний переадресованный номер)'/g" $1
+sed -i "s/tip: 'Transfer the call to another call flow'/tip: 'Перевести вызов на другой маршрут'/g" $1
+sed -i "s/tip: 'Direct a caller to leave a voicemail message'/tip: 'Предложить звонящему оставить голосовое сообщение'/g" $1
+sed -i "s/tip: 'Direct a caller to a specific user'/tip: 'Направить вызов на конкретного абонента'/g" $1
+sed -i "s/tip: 'Connect a caller to a Meet-Me conference bridge'/tip: 'Подключить звонящего к конференции'/g" $1
+sed -i "s/tip: 'Ring several VoIP or cell phones in order or at the same time'/tip: 'Направить вызов на несколько IP-телефонов, мобильных одновременно или последовательно'/g" $1
+sed -i "s/tip: 'Ring a VoIP or cell phone or other device'/tip: 'Направить вызов на IP-телефон, мобильный или на другое устройство'/g" $1
+sed -i "s/This callflow has not been created or doesn\\'t exist anymore./Этот маршрут еще не был создан или уже не существует./g" $1
+sed -i "s/Define the Caller ID Number of this Account for In-House Calls. If the Caller ID Number of the device and of the user is not set, this Caller ID Number will be used./Укажите Номер звонящего для внутренних звонков этой учетной записи. Если Номер звонящего пользователя или устройства не будет определён, будет использоваться эта настройка./g" $1
+sed -i "s/Define the Caller ID Name of this Account for In-House Calls. If the Caller ID Name of the device and of the user is not set, this Caller ID Name will be used./Укажите Имя звонящего для внутренних звонков этой учетной записи. Если Имя звонящего пользователя или устройства не будет определено, будет использоваться эта настройка./g" $1
+sed -i "s/Define the Caller ID Name of this Account for Outbound Calls. If the Caller ID Name of the device and of the user is not set, this Caller ID Name will be used./Укажите Имя звонящего для исходящих звонков этой учетной записи. Если Имя звонящего пользователя или устройства не будет определено, будет использоваться эта настройка./g" $1
+sed -i "s/Define the Caller ID Number of this Account for Outbound Calls. If the Caller ID Number of the device and of the user is not set, this Caller ID Number will be used./Укажите Номер звонящего для исходящих звонков этой учетной записи. Если Номер звонящего пользователя или устройства не будет определён, будет использоваться эта настройка./g" $1
 sed -i "s/>Emergency</>Экстренные службы - функционал не поддерживается. При осуществлении вызовов в городскую телефонную сеть используется номер звонящего установленный в разделе Исходящие звонки.</g" $1
 sed -i "s/>Caller ID Name</>Имя звонящего</g" $1
 sed -i "s/>Caller ID Number</>Номер звонящего</g" $1
@@ -83,6 +95,8 @@ sed -i "s/>Softphone</>Софтфон</g" $1
 sed -i "s/>SIP Device</>SIP устройство</g" $1
 sed -i "s/>Create Device</>Создать устройство</g" $1
 sed -i "s/>Warning</>Предупреждение</g" $1
+sed -i "s/title: 'Warning'/title: 'Предупреждение'/g" $1
+sed -i "s/title: 'Error'/title: 'Ошибка'/g" $1
 sed -i "s/>Info</>Информация</g" $1
 sed -i "s/>Direct sub-accounts: </>Зависимые напрямую: </g" $1
 sed -i "s/>Sub-accounts: </>Зависимые: </g" $1
@@ -127,7 +141,9 @@ sed -i "s/title: 'Directory'/title: 'Справочник'/g" $1
 sed -i "s/label: 'Call History'/label: 'История звонков'/g" $1
 sed -i "s/>Basic</>Общие</g" $1
 sed -i "s/>Advanced</>Экспертные</g" $1
+sed -i "s/>Account Details</>Общие настройки</g" $1
 sed -i "s/label: 'Account Details'/label: 'Общие настройки'/g" $1
+sed -i "s/title: 'Account Details'/title: 'Общие настройки'/g" $1
 sed -i "s/We'll send you a link to reset your password./Вам будет отправлена ссылка для восстановления пароля./g" $1
 sed -i "s/Please input a login, and either an account name, an account realm or a phone number linked to your account./Пожалуйста введите логин и название учетной записи, реалм или подключенный номер телефона./g" $1
 sed -i "s/>Recover</>Восстановить</g" $1
@@ -311,7 +327,7 @@ sed -i 's/>Account Name</>Учетная запись</g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
-###sed -i 's///g' $1
+sed -i 's/"+12033561234"/"78121234567"/g' $1
 sed -i 's/"555-555-5555"/"78121234567"/g' $1
 sed -i 's/"Name"/"Название"/g' $1
 sed -i 's/"Realm (unique)"/"Realm (уникальный)"/g' $1
@@ -319,7 +335,7 @@ sed -i 's/"Support Number"/"Номер поддержки"/g' $1
 sed -i 's/>Callflow&nbsp/>Маршрут&nbsp/g' $1
 sed -i 's/>User&nbsp/>Пользователь&nbsp/g' $1
 sed -i 's/<a href="http:\/\/www.2600hz.com" target="_blank">LEARN MORE<\/a>/<a href="http:\/\/onnet.su\/2600hzaward" target="_blank">О ПЛАТФОРМЕ<\/a>/g' $1
-sed -i 's/"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries"/"sInfo": "Показано _START_ до _END_ из _TOTAL_ записей"/g' $1
+sed -i 's/"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries"/"sInfo": "Показано с _START_ по _END_ из _TOTAL_ записей"/g' $1
 sed -i 's/"sInfoEmpty": "Showing 0 to 0 of 0 entries"/"sInfoEmpty": "Показано 0 записей"/g' $1
 sed -i 's/"sEmptyTable": "No data available in table"/"sEmptyTable": "Данные отсутствуют"/g' $1
 sed -i 's/"Feature Codes"/"Функции"/g' $1
