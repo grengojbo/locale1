@@ -7,9 +7,19 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
+sed -i "s/An arbitrary caller-id type to search for when this route is used/Используемый тип номера звонящего при звонках через это маршрут/g" $1
+sed -i "s/In secs, the maximum time to wait for media from a carrier gateway/Максимальное время ожидания ответа от коммутатора оператора, в секундах/g" $1
+sed -i "s/Additional characters to append to the front of the dialed number/Дополнительные символы, добавляемые после набранного номера/g" $1
+sed -i "s/Additional characters to prepend to the front of the dialed number/Дополнительные символы, добавляемые перед набранным номером/g" $1
+sed -i "s/The format of the request URI used in the SIP invite./Формат запроса URI используемого в SIP invite./g" $1
+sed -i "s/A regular expression used by the routine engine to determine when to use this carrier./Регулярное выражение используемое для определения годности оператора при маршрутизации./g" $1
+sed -i "s/The authentication realm used if challenged by the server/Используемый для аутентификации в случае запроса коммутатором Реалм/g" $1
+sed -i "s/When set to false this carrier will be ignored by the call routing engine/Если установлено в отрицательное значение этот оператор не будет использоваться для маршрутизации вызовов/g" $1
+sed -i "s/The priority determines which carrier is tried first when multiple carriers are set up for the same rule (more than 1 10-digit US carrier, etc)/Приоритет определяет порядок использования операторов при отправке исходящего вызова в случае если несколько операторов удовлетворяют вызываемому направлению./g" $1
+sed -i "s/The authentication username used if challenged by the server/Имя пользователя используется если коммутатор требует пройти аутентификацию/g" $1
+sed -i "s/The authentication password used if challenged by the server/Пароль пользователя используется если коммутатор требует пройти аутентификацию/g" $1
+sed -i "s/The destination server domain or IP/Доменное имя или IP адрес SIP коммутатора оператора./g" $1
+sed -i "s/Global Carriers are system-wide trunks./Общесистемные операторы предоставляют услугу маршрутизации исходящих вызовов для всех абонентов./g" $1
 sed -i "s/How long to ring an agent's phone before moving to the next agent/Время ожидания поднятия трубки до перехода к следующему агенту./g" $1
 sed -i "s/How long caller stays in queue, in seconds/Как долго абонент может оставаться в очереди, в секундах./g" $1
 sed -i "s/This option, when checked, will suppress the playing of 'Invalid Entry'./Опция позволяет отключить сообщение о неправильном вводе./g" $1
@@ -52,6 +62,7 @@ sed -i "s/Do you want the members to join the conference muted by default/Под
 sed -i "s/Do you want to play names of members when they enter the conference/Объявлять имена пользователей при их подключении к конференции/g" $1
 sed -i "s/A comma separated list of pins, that can be entered to join the conference/Список разделенных запятой Пин-кодов для доступа в конференцию/g" $1
 sed -i "s/Select the user who owns this conference/Выберите пользователя, которому принадлежит эта конференция/g" $1
+sed -i "s/Friendly name for this carrier/Удобное название этого оператора/g" $1
 sed -i "s/Friendly name for this Queue/Удобное название этой очереди/g" $1
 sed -i "s/Friendly name for this Menu/Удобное название этого меню/g" $1
 sed -i "s/Friendly name for this media file/Удобное название этого медиа файла/g" $1
@@ -389,8 +400,9 @@ sed -i 's/>Account Name</>Учетная запись</g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
-###sed -i 's///g' $1
-###sed -i 's///g' $1
+sed -i 's/"Username"/"Имя пользователя"/g' $1
+sed -i 's/"Password"/"Пароль пользователя"/g' $1
+sed -i 's/"Domain name or IP address"/"Доменное имя или IP адрес"/g' $1
 sed -i 's/"Member timeout (s)"/"Время ожидания агента (сек)"/g' $1
 sed -i 's/"Queue timeout (s)"/"Время ожидания в очереди (сек)"/g' $1
 sed -i 's/"Length"/"Длинна"/g' $1
