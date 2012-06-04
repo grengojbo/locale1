@@ -1,4 +1,65 @@
 ###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/How long to ring an agent's phone before moving to the next agent/Время ожидания поднятия трубки до перехода к следующему агенту./g" $1
+sed -i "s/How long caller stays in queue, in seconds/Как долго абонент может оставаться в очереди, в секундах./g" $1
+sed -i "s/This option, when checked, will suppress the playing of 'Invalid Entry'./Опция позволяет отключить сообщение о неправильном вводе./g" $1
+sed -i "s/This option allows someone to dial into a menu from an outside number (i.e. their cell phone, landline, etc.) and enter the PIN for the menu to be able to re-record it./Эта опция позволяет абоненту попав в меню извне (мобильный телефон, внешняя городская линия) и авторизовавшись по ПИН коду произвести запись./g" $1
+sed -i "s/The maximum length of an extension. By default, it is set to the Record PIN number length./максимальная длина внутреннего номера. По умолчанию, равна длине ПИН кода для записи голосового приветствия./g" $1
+sed -i "s/Allowed number of seconds without any key pressed/Разрешенное время ожидания нажатия очередной клавиши/g" $1
+sed -i "s/Number of allowed retries on misdial on this menus/Количество попыток при неправильном наборе для данного меню/g" $1
+sed -i "s/List of numbers that users are not allowed to dial when hunting/Список неразрешенных для набора номеров при поиске/g" $1
+sed -i "s/List of numbers that users are allowed to dial when hunting/Список разрешенных для набора номеров при поиске/g" $1
+sed -i 's/Select the Greeting message that you want to use for this this menu. If you select - Not set -, then no media file will be played./Выберите голосовое приветствие для этого меню. Если выбрать "Не установлено", ничего проигрываться не будет./g' $1
+sed -i "s/Do you want to allow the user to dial extensions from this menu/Разрешить донабор внутренних номеров из этого меню/g" $1
+sed -i "s/PIN to enter in order to allow users to record their own greetings/Пин для авторизации с целью разрешить пользователям запись собственных приветствий/g" $1
+sed -i "s/Enable streaming of media/Разрешить потоковое вещание этого ролика/g" $1
+sed -i "s/The star is mandatory for any feature code, that's why it has been added by default./Символ звездочки обязателен для любого функционального кода, поэтому он добавлен по умолчанию./g" $1
+sed -i "s/Select your sort method/Выбрать метод сортировки/g" $1
+sed -i "s/If only one match is found, is the caller prompted to confirm the match before connecting/Предложить подтвердить желание осуществить вызов, в случае единственного совпадения./g" $1
+sed -i "s/Count of the most DTMFs collected, once reached the list of matches is played. If set to 0, then there is no limit to the number of DTMFs collected./Максимальное количество знаков, после которого начинает проигрываться список совпадений. Если установлено в 0, то ограничения нет./g" $1
+sed -i "s/Count of how many DTMFs must be collected before processing begins/Минимальное количество знаков до начала поиска/g" $1
+sed -i "s/Do you want to enable T-38 for this device/Установите режим работы протокола Т.38 для данного устройства/g" $1
+sed -i "s/Select the kind of Peer-to-Peer that you would like to set on this device/Выберите настройку соединения точка-точка для данного устройства/g" $1
+sed -i "s/Enter the expiration time of this device (in seconds)/Введите срок перерегистрации этого устройства (в секундах)/g" $1
+sed -i "s/Enter your SIP Invite Format/Выберите формат SIP Invite/g" $1
+sed -i "s/Enter your SIP Password. Click on the input to make the password appear/Введите пароль для SIP регистрации. Щёлкните по паролю, чтобы увидеть его значение/g" $1
+sed -i "s/Enter your SIP Username/Введите имя пользователя для SIP регистрации/g" $1
+sed -i "s/Select your authentication method/Выберите метод аутентификации/g" $1
+sed -i "s/Define the Caller ID Number of this User for Outbound Calls. If the Caller ID Number of the device and of the user is not set, this Caller ID Number will be used./Назначить Номер звонящего этому пользователю для исходящих вызовов. Если Номер звонящего не назначен устройству будет использоваться эта установка./g" $1
+sed -i "s/Define the Caller ID Name of this User for Outbound Calls. If the Caller ID Name of the device and of the user is not set, this Caller ID Name will be used./Назначить Имя звонящего этому пользователю для исходящих вызовов. Если Имя звонящего не назначено устройству будет использоваться эта установка./g" $1
+sed -i "s/Define the Caller ID Number of this User for In-House Calls. If the Caller ID Number of the device and of the user is not set, this Caller ID Number will be used./Назначить Номер звонящего этому пользователю для внутренних звонков. Если Номер звонящего не назначен устройству будет использоваться эта установка./g" $1
+sed -i "s/Define the Caller ID Name of this User for In-House Calls. If the Caller ID Name of the device and of the user is not set, this Caller ID Name will be used./Назначить Имя звонящего этому пользователю для внутренних звонков. Если Имя звонящего не назначено устройству будет использоваться эта установка./g" $1
+sed -i "s/Do you want to notify the administrator each time this device unregisters/Информировать администратора каждый раз, когда отключается регистрация/g" $1
+sed -i "s/Enter the MAC Address of this device formatted like: 1A:B2:C6:78:F0:3B/Введите MAC Address этого устройства в следующем формате: 1A:B2:C6:78:F0:3B/g" $1
+sed -i "s/If set to true it will use the caller-id of the caller/Если опция включена, будет использоваться номер звонящего. ПРЕДУПРЕЖДЕНИЕ: Звонки в городскую телефонную сеть возможно только если номер звонящего принадлежит текущей учетной записи./g" $1
+sed -i "s/Do you want to require a key press to answer this call/Требуется ли нажатие клавиши для ответа на звонок/g" $1
+sed -i "s/Do you want this device enabled/Включить устройство/g" $1
+sed -i "s/Outside number you wish to reach/Внешний номер телефона на который Вы хотите перенаправить звонок/g" $1
+sed -i "s/Select the owner of this device/Выберите хозяина этого устройства/g" $1
+sed -i "s/A comma separated list of numbers, that will be assigned to the conference. Unless you plan to use the 'Conference Service' callflow node - don't worry about this field/Разделенный запятой список номеров для конференций. Если Вы не планируете использовать Сервис конференция в разделе Маршрутизация, это поле Вам не понадобится./g" $1
+sed -i "s/Do you want the members to join the conference deaf by default/Подключаться к конференции глухим по умолчанию/g" $1
+sed -i "s/Do you want the members to join the conference muted by default/Подключаться к конференции по умолчанию приглушенными/g" $1
+sed -i "s/Do you want to play names of members when they enter the conference/Объявлять имена пользователей при их подключении к конференции/g" $1
+sed -i "s/A comma separated list of pins, that can be entered to join the conference/Список разделенных запятой Пин-кодов для доступа в конференцию/g" $1
+sed -i "s/Select the user who owns this conference/Выберите пользователя, которому принадлежит эта конференция/g" $1
+sed -i "s/Friendly name for this Queue/Удобное название этой очереди/g" $1
+sed -i "s/Friendly name for this Menu/Удобное название этого меню/g" $1
+sed -i "s/Friendly name for this media file/Удобное название этого медиа файла/g" $1
+sed -i "s/Friendly name for this Directory/Удобное название этого Справочника/g" $1
+sed -i "s/Friendly name for this conference/Удобное название этой конференции/g" $1
+sed -i "s/Friendly name for this device/Удобное название этого устройства/g" $1
+sed -i "s/Some upstream carriers need to know which specific customer is placing outbound calls. Activating this field puts the account realm into the From: header for all INVITEs so that the upstream carrier can tell which customer is actually making a call. Useful for billing and LCR purposes. WARNING: This also is used in authentication. If you are also authenticating the calls, this will change the authentication realm./Некоторые операторы требуют указывать информацию о совершающем вызов клиенте. Эта информация может быть использована для целей биллинга либо инфивидуальной маршрутизации. ПРЕДУПРЕЖДЕНИЕ: Опция так же используется при аутентификации. В случае использования аутентификации, Реалм будет изменен./g" $1
+sed -i "s/Select the media file that you want to be played by default when it\\\'s not set on a user or a device./Выберите медиа файл, который Вы хотели бы проигрывать по умолчанию в случае отсутствия специальной настройки пользователя или устройства./g" $1
 sed -i "s/tip: 'Prompt the caller for a mailbox number and password so they can check voicemails'/tip: 'Запросить у абонента номер ящика и пароль с тем, чтобы он мог прослушать голосовую почту'/g" $1
 sed -i "s/tip: 'Toggle Hot desking'/tip: 'Переключить Hot desking'/g" $1
 sed -i "s/tip: 'Disable Hot desking'/tip: 'Отключить Hot desking'/g" $1
@@ -291,6 +352,7 @@ sed -i 's/>Time zone:</>Часовой пояс:</g' $1
 sed -i 's/>Music on hold:</>Ожидание (музыка):</g' $1
 sed -i 's/>Create User</>Создать пользователя</g' $1
 sed -i 's/>Edit User</>Настроить пользователя</g' $1
+sed -i 's/>Edit</>Настроить</g' $1
 sed -i 's/>Number to redirect calls to:</>Номер для переадресации:</g' $1
 sed -i 's/>Require Key Press?</>Требуется нажатие клавиши?</g' $1
 sed -i "s/>Bypass user's phones:</>Минуя телефоны пользователя:</g" $1
@@ -327,13 +389,22 @@ sed -i 's/>Account Name</>Учетная запись</g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
 ###sed -i 's///g' $1
+###sed -i 's///g' $1
+###sed -i 's///g' $1
+sed -i 's/"Member timeout (s)"/"Время ожидания агента (сек)"/g' $1
+sed -i 's/"Queue timeout (s)"/"Время ожидания в очереди (сек)"/g' $1
+sed -i 's/"Length"/"Длинна"/g' $1
+sed -i 's/"Timeout in seconds"/"Время ожидания в секундах"/g' $1
+sed -i 's/"Retries"/"Попытки"/g' $1
+sed -i 's/"Record PIN"/"PIN для записи"/g' $1
 sed -i 's/"+12033561234"/"78121234567"/g' $1
 sed -i 's/"555-555-5555"/"78121234567"/g' $1
 sed -i 's/"Name"/"Название"/g' $1
 sed -i 's/"Realm (unique)"/"Realm (уникальный)"/g' $1
 sed -i 's/"Support Number"/"Номер поддержки"/g' $1
-sed -i 's/>Callflow&nbsp/>Маршрут&nbsp/g' $1
-sed -i 's/>User&nbsp/>Пользователь&nbsp/g' $1
+sed -i 's/"Number"/"Номер"/g' $1
+sed -i 's/<div class="column second">Callflow/<div class="column second">Маршрут/g' $1
+sed -i 's/<div class="column first">User/<div class="column first">Пользователь/g' $1
 sed -i 's/<a href="http:\/\/www.2600hz.com" target="_blank">LEARN MORE<\/a>/<a href="http:\/\/onnet.su\/2600hzaward" target="_blank">О ПЛАТФОРМЕ<\/a>/g' $1
 sed -i 's/"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries"/"sInfo": "Показано с _START_ по _END_ из _TOTAL_ записей"/g' $1
 sed -i 's/"sInfoEmpty": "Showing 0 to 0 of 0 entries"/"sInfoEmpty": "Показано 0 записей"/g' $1
