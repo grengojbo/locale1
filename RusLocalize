@@ -2,12 +2,12 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-sed -i "s/An arbitrary caller-id type to search for when this route is used/Используемый тип номера звонящего при звонках через это маршрут/g" $1
+sed -i "s/Select the starting date of this rule/Выберите дату активации этого правила/g" $1
+sed -i "s/Select which days to apply this rule/Выберите дни в которые это правило применимо/g" $1
+sed -i "s/Depending on the cycle, define the recurrence of this rule/В зависимости от цикла, определите повторение этого правила/g" $1
+sed -i "s/Select the recurrence of this time based route/Оппределите периодичность повторения этого расписания/g" $1
+sed -i "s/Name of this Time of Day Rule/Название расписания/g" $1
+sed -i "s/An arbitrary caller-id type to search for when this route is used/Используемый тип номера звонящего при звонках через этого оператора/g" $1
 sed -i "s/In secs, the maximum time to wait for media from a carrier gateway/Максимальное время ожидания ответа от коммутатора оператора, в секундах/g" $1
 sed -i "s/Additional characters to append to the front of the dialed number/Дополнительные символы, добавляемые после набранного номера/g" $1
 sed -i "s/Additional characters to prepend to the front of the dialed number/Дополнительные символы, добавляемые перед набранным номером/g" $1
@@ -237,7 +237,7 @@ sed -i "s/'sTitle': 'Time'/'sTitle': 'Время'/g" $1
 sed -i "s/'sTitle': 'Date'/'sTitle': 'Дата'/g" $1
 sed -i "s/'sTitle': 'Port'/'sTitle': 'Порт'/g" $1
 sed -i "s/'sTitle': 'Username'/'sTitle': 'Пользователь'/g" $1
-sed -i "s/label: 'Time Of Day'/label: 'Время дня'/g" $1
+sed -i "s/label: 'Time Of Day'/label: 'Расписание'/g" $1
 sed -i "s/label: 'Registrations'/label: 'Регистрации'/g" $1
 sed -i "s/label: 'Users'/label: 'Пользователи'/g" $1
 sed -i "s/label: 'Devices'/label: 'Устройства'/g" $1
@@ -347,8 +347,8 @@ sed -i 's/>Outbound Calls</>Исходящие звонки</g' $1
 sed -i 's/>Media File:</>Медиа файл:</g' $1
 sed -i 's/>Media File: </>Медиа файл: </g' $1
 sed -i 's/>Streamable:</>Потоковое:</g' $1
-sed -i 's/>Create Time of Day</>Создать временной интервал</g' $1
-sed -i 's/>Edit Time of Day</>Настроить временной интервал</g' $1
+sed -i 's/>Create Time of Day</>Создать расписание</g' $1
+sed -i 's/>Edit Time of Day</>Настроить расписание</g' $1
 sed -i 's/>Caller ID Name:</>Имя звонящего:</g' $1
 sed -i 's/>Caller ID Number:</>Номер звонящего:</g' $1
 sed -i 's/>Voicemail-to-Email Template</>Voicemail-на-Email шаблон</g' $1

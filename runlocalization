@@ -2,5 +2,6 @@
 updatedb
 updatedb
 awk '{ print length(), $0}' /var/www/localization/RusLocalize | sort -n -r | sudo cut -f2- -d' ' > /var/www/localization/RusLocalize.sort
+chmod a+x /var/www/localization/RusLocalize.sort
 locate ".html" | grep "/var/www/html/" | awk '{print "/var/www/localization/RusLocalize.sort " $1}' | sh
 locate ".js" | grep "/var/www/html/" | awk '{print "/var/www/localization/RusLocalize.sort " $1}' | sh
