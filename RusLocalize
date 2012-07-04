@@ -2,6 +2,27 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/The following devices are mapped to this user. If you're creating a user, you can add a Device and it will be automatically assigned to this new user once the user creation is completed./Данному пользователю присвоены следующие устройства. Если Вы создаете пользователя, Вы можете указать устройства, которые хотите присвоить создаваемому пользователю./g" $1
+sed -i "s/By checking this option, an email will be sent to the specified e-mail address each time you get a Fax./Эта опция активирует отправку полученных факсов на email./g" $1
+sed -i "s/By checking this option, an email will be sent to the specified e-mail address each time a device of this account unregisters./Эта настройка позволяет получать уведомления на email при потере регистраци устройства./g" $1
+sed -i "s/>Fax to Email</>Факс на Email</g" $1
+sed -i "s/>Voicemail to Email</>Голосовые сообщения на Email</g" $1
+sed -i "s/>Join the conference deaf</>Входить глухим</g" $1
+sed -i "s/>Join the conference muted</>Входить приглушенным</g" $1
+sed -i "s/>Play name upon entry</>Анонсировать вошедшего</g" $1
+sed -i "s/>Conference Server</>Сервер конференций</g" $1
+sed -i "s/>PINs</>Пин-коды</g" $1
+sed -i "s/>Assign To</>Администратор</g" $1
+sed -i "s/tip: 'Directs a fax to a specific user'/tip: 'Принять факс для определенного пользователя'/g" $1
+sed -i "s/tip: 'Manual Presence Help'/tip: 'Ручная установка индикации'/g" $1
+sed -i "s/name: 'Manual Presence'/name: 'Индикация'/g" $1
 sed -i "s/Select the starting date of this rule/Выберите дату активации этого правила/g" $1
 sed -i "s/Select which days to apply this rule/Выберите дни в которые это правило применимо/g" $1
 sed -i "s/Depending on the cycle, define the recurrence of this rule/В зависимости от цикла, определите повторение этого правила/g" $1
@@ -307,7 +328,7 @@ sed -i 's/>Create Conference</>Создать конференцию</g' $1
 sed -i 's/>Edit Conference</>Настроить конференцию</g' $1
 sed -i 's/>Active feature codes</>Функциональные коды</g' $1
 sed -i 's/>Conferences</>Конференции</g' $1
-sed -i 's/>Conference Name:</>Название конференции:</g' $1
+sed -i 's/>Conference Name:</>Название:</g' $1
 sed -i 's/>Assign To:</>Принадлежит пользователю:</g' $1
 sed -i 's/>PINs:</>Пин Коды:</g' $1
 sed -i 's/>Numbers:</>Номера:</g' $1
@@ -375,6 +396,8 @@ sed -i 's/>Create Device</>Создать</g' $1
 sed -i 's/>Create</>Создать</g' $1
 sed -i 's/>Number:</>Номер:</g' $1
 sed -i 's/>Enabled:</>Активировано:</g' $1
+sed -i 's/>Enabled</>Вкл.</g' $1
+sed -i 's/>Type</>Тип</g' $1
 sed -i 's/>Device Nickname:</>Ник устройства:</g' $1
 sed -i 's/>Device MAC Address:</>MAC адрес устройства:</g' $1
 sed -i 's/>SIP Settings</>Настройки SIP</g' $1
