@@ -1,4 +1,5 @@
 sed -i "s/api.2600hz.com/94.125.0.113/g" /var/www/html/config/config.js
+sed -i "s/apps.2600hz.com/94.125.0.113/g" /var/www/html/config/config.js
 sed -i "s/company_name: '2600hz'/company_name: 'OnNet'/g" /var/www/html/config/config.js
 sed -i "s/login: '.sip.2600hz.com'/login: '.sip2.onnet.su'/g" /var/www/html/config/config.js
 sed -i "s/register: '.trial.2600hz.com'/register: '.sip2.onnet.su'/g" /var/www/html/config/config.js

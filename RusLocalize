@@ -3,6 +3,24 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/Are you sure you want to use a different carrier?/Вы уверены, что хотите самостоятельно настраивать маршрутизацию вызовов в городскую телефонную сеть?/g" $1
+sed -i "s/Use a different carrier/Внешние операторы/g" $1
+sed -i "s/Use my provider/Системный оператор/g" $1
+sed -i "s/You can manage your own carriers by adding\/editing or removing carriers from the list on the left side./Вы можете самостоятельно подключать внешние телефонные линии добавляя\/удаляя операторов в левой части панели./g" $1
+sed -i 's/If you want to manage your own carriers, click on "Use a different carrier" button./Если Вы хотите самостоятельно настраивать маршрутизацию внешних телефонных линий, используйте опцию "Внешние операторы"/g' $1
+sed -i "s/>Congratulations! You're now using your provider as your global carrier!</>Подключение внешних телефонных линий осуществляется оператором <\/br> ЗАО «ОнНет комьюникейшнс»</g" $1
+sed -i "s/>Congratulations! You're now using 2600hz as your global carrier!</>Подключение внешних телефонных линий осуществляется оператором <\/br> ЗАО «ОнНет комьюникейшнс»</g" $1
+sed -i "s/>Your account is currently using an external carrier</>Подключение внешних телефонных линий осуществляется самостоятельно</g" $1
 sed -i "s/Tick if you want to stay logged in on your other devices/Отметьте если хотите оставаться подключенным на других устройствах/g" $1
 sed -i "s/>Keep logged in elsewhere</>Оставаться включенным везде</g" $1
 sed -i "s/Does it require a PIN?/Требуется ли использование Пин-кода/g" $1
@@ -14,7 +32,7 @@ sed -i "s/Do you want to enable auto-login for this voicemail box? (If the user 
 sed -i "s/Do you want to enable Hot Desking?/Опция дает возможность использовать функцию Hot Desking?/g" $1
 sed -i "s/>Enable Hot Desking</>Активировать Hot Desking</g" $1
 sed -i "s/>Confirm Password</>Подтвердить пароль</g" $1
-sed -i "s/>*Confirm Password</>*Подтвердить пароль</g" $1
+sed -i "s/>*Confirm Password</>Подтвердить пароль</g" $1
 sed -i "s/>New Password:</>Новый пароль:</g" $1
 sed -i "s/>New Password</>Новый пароль</g" $1
 sed -i "s/>Verify New Password:</>Проверить новый пароль:</g" $1
