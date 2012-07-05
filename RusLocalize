@@ -3,12 +3,40 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
+sed -i "s/Tick if you want to stay logged in on your other devices/Отметьте если хотите оставаться подключенным на других устройствах/g" $1
+sed -i "s/>Keep logged in elsewhere</>Оставаться включенным везде</g" $1
+sed -i "s/Does it require a PIN?/Требуется ли использование Пин-кода/g" $1
+sed -i "s/>Require PIN</>Использовать Пин-код</g" $1
+sed -i "s/In order to enable Hot Desking from another device, you'll need to provide an ID and a PIN./Для того, чтобы иметь возможность подключить Hot Desking с другого устройства, Вам необходимо использовать ID и Пин-код./g" $1
+sed -i "s/Do you want to skip instructions by default/По умолчанию опускать инструкции/g" $1
+sed -i "s/Do you want to skip greetings by default/По умолчанию опускать приветствие/g" $1
+sed -i "s/Do you want to enable auto-login for this voicemail box? (If the user call his own voicemail, it goes straight to his messages)/Включить автоматическую авторизацию голосового ящика. Если пользователь обратится со своего телефона к почтовому ящику, доступ будет предоставлен без запроса пароля./g" $1
+sed -i "s/Do you want to enable Hot Desking?/Опция дает возможность использовать функцию Hot Desking?/g" $1
+sed -i "s/>Enable Hot Desking</>Активировать Hot Desking</g" $1
+sed -i "s/>Confirm Password</>Подтвердить пароль</g" $1
+sed -i "s/>*Confirm Password</>*Подтвердить пароль</g" $1
+sed -i "s/>New Password:</>Новый пароль:</g" $1
+sed -i "s/>New Password</>Новый пароль</g" $1
+sed -i "s/>Verify New Password:</>Проверить новый пароль:</g" $1
+sed -i "s/>Password Management</>Смена пароля</g" $1
+sed -i "s/If checked, it will only use the call forwarding if the user\/device is rung directly and not when rung as a member of a group (ring group, ect)./Если выбрана данная опция, переадресация будет срабатывать только в случае прямого вызова, игнорируя звонки, приходящие, к примеру, на группы, очереди и т.п./g" $1
+sed -i "s/>Direct Calls Only</>Только прямые звонки</g" $1
+sed -i "s/If set to true when call forwarding takes place it will use the caller-id of the person being forwarded. If false it will use the caller-id of the user./Если выбрана данная опция, номер изначально позвонившего абонента будет сохраняться при переадресации. В случае переадресации звонка на номер городской телефонной сети, АОН звонившего будет заменен на номер абонента использующего переадресацию, поскольку трансляция АОНов между сетями операторов абонентам запрещена./g" $1
+sed -i "s/Keep Caller ID/Передавать АОН/g" $1
+sed -i "s/Do you want this user to press a key to answer a call that has been call-forwarded/Соединение будет устанавливаться только после нажатия клавиши абонентом, получившим переадресованный звонок./g" $1
+sed -i "s/>Require Key Press</>Ожидать нажатия клавиши</g" $1
+sed -i "s/If this box is checked, it will prevent the user's phones from ringing. For example: If you want to ONLY ring a user's cellphone (and not their desk phone) - check this box./Данная опция позволяет исключить телефон пользователя из схемы переадресации. К примеру звонок будет переадресовываться на Ваш мобильный телефон, минуя стационарный аппарат./g" $1
+sed -i "s/>Bypass user's phones</>Обойти телефон пользователя</g" $1
+sed -i "s/Number to redirect calls to for the call-forwarding feature/Введите номер, на который Вы хотели бы установить переадресацию/g" $1
+sed -i "s/>Redirect calls to</>Перенаправить звонки на</g" $1
+sed -i "s/>Enable Call-Forward</>Активировать переадресацию</g" $1
+sed -i "s/Tick the checkbox to set this user as an agent and you will then be able to define a Queue PIN for this agent (not mandatory)./Выберите эту опцию, чтобы активировать пользователя в качестве агента и установить Пин-код очереди для него (необязательно)./g" $1
+sed -i "s/>Enable Agent \/ PIN</Активировать в качестве агента \/ Пин-код/g" $1
+sed -i "s/Select the time zone of this user./Выберите часовой пояс этого пользователя./g" $1
+sed -i "s/>Music on Hold</>Музыка на удержании</g" $1
+sed -i "s/>Time zone</>Часовой пояс</g" $1
+sed -i "s/Verify User ?/Проверить пользователя ?/g" $1
+sed -i "s/>User has been verified</>Пользователь проверен</g" $1
 sed -i "s/The following devices are mapped to this user. If you're creating a user, you can add a Device and it will be automatically assigned to this new user once the user creation is completed./Данному пользователю присвоены следующие устройства. Если Вы создаете пользователя, Вы можете указать устройства, которые хотите присвоить создаваемому пользователю./g" $1
 sed -i "s/By checking this option, an email will be sent to the specified e-mail address each time you get a Fax./Эта опция активирует отправку полученных факсов на email./g" $1
 sed -i "s/By checking this option, an email will be sent to the specified e-mail address each time a device of this account unregisters./Эта настройка позволяет получать уведомления на email при потере регистраци устройства./g" $1
