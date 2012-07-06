@@ -1,18 +1,67 @@
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
+sed -i "s/>Suppress playing of Invalid Entry</>Отключить сообщение о неправильном вводе номера</g" $1
+sed -i "s/>Allow outside recording</>Разрешить запись извне</g" $1
+sed -i "s/>Timeout for dialing (s)</>Таймаут при наборе (сек)</g" $1
+sed -i "s/>Number of retries on misdial</>Количество повторов при ошибке</g" $1
+sed -i "s/>Extension Number Length</>Длинна внутреннего номера</g" $1
+sed -i "s/>Extension Dialing</>Правила набора</g" $1
+sed -i "s/>Blacklist of numbers</>Черный список</g" $1
+sed -i "s/>Whitelist of numbers</>Белый список</g" $1
+sed -i "s/>Greeting Message</>Голосовое приветствие</g" $1
+sed -i "s/>Allow caller to dial extensions</>Разрешить донабор</g" $1
+sed -i "s///g" $1
+sed -i "s/>Prompt Record PIN</>PIN для записи</g" $1
+sed -i "s/>Skip Instructions</>Пропустить инструкции</g" $1
+sed -i "s/>Skip Greeting</>Пропустить приветствие</g" $1
+sed -i "s/>Auto-login enabled</>Автоматическая авторизация</g" $1
+sed -i "s/Does this voicemail require a PIN/Требуется ли пин-код для доступа к голосовым сообщениям/g" $1
+sed -i "s/Is this voicemail box already considered initialized? If not, the first time the user logs in they will be forced to change their PIN and setup a greeting./Считать голосовой ящик активированным? Если нет, во время первого входа пользователю будет предложено сменить пин-код и установить приветствие./g" $1
+sed -i "s/>Already Setup</>Уже настроен</g" $1
+sed -i "s/>Already have an invitation code?</У Вас уже есть код приглашения?/g" $1
+sed -i "s/Chose the owner of this voicemail box/Выберите пользователя для этого голосового ящика/g" $1
+sed -i "s/Choose the owner of this voicemail box/Выберите пользователя для этого голосового ящика/g" $1
+sed -i "s/Enter the PIN Number of this voicemail box/Введие пин-код для этого голосового ящика/g" $1
+sed -i "s/Number of this voicemail box/Номер этого ящика голосовой почты/g" $1
+sed -i "s/Friendly Name for this voicemail box/Удобное название голосового ящика/g" $1
+sed -i "s/Friendly name of this carrier/Удобное название этого оператора/g" $1
+sed -i "s/week(s)/неделя/g" $1
+sed -i "s/month(s)/месяц(ев)/g" $1
+sed -i "s/value: 'Weekly'/value: 'Еженедельно'/g" $1
+sed -i "s/value: 'Monthly'/value: 'Ежемесячно'/g" $1
+sed -i "s/value: 'Yearly'/value: 'Ежегодно'/g" $1
+sed -i "s/Select the Unavailable message that you want to use for this this device. If you select - Not set -, then no media file will be played./Выберите приветствие на случай недоступности устройства. Если сообщение на выбрано, ничего проигрываться не будет./g" $1
+sed -i "s/>Timezone</>Часовой пояс</g" $1
+sed -i "s/>Unavailable Message</>Приветствие</g" $1
+sed -i "s/>PIN number</>Пин-код</g" $1
+sed -i "s/>Which Voicemail Box?</>Выберите ящик</g" $1
+sed -i "s/>Voicemail Number</>Номер ящика</g" $1
+sed -i "s/>Edit Voicemail Box</>Настроить ящик голосовой почты</g" $1
+sed -i "s/title: 'Voicemail'/title: 'Голосовая почта'/g" $1
+sed -i "s/>Time:</>Время суток:</g" $1
+sed -i "s/>Start Date</>Начать с (дата):</g" $1
+sed -i "s/>On:</>по:</g" $1
+sed -i "s/>Every:</>с частотой:</g" $1
+sed -i "s/>Repeats</>Повторять</g" $1
+sed -i "s/>Notify when unregistered</>Уведомлять при потере регистрации</g" $1
+sed -i "s/>Which Device?</>Укажите устройство</g" $1
+sed -i "s/>Device MAC Address</>MAC адрес устройства</g" $1
+sed -i "s/>Device Nickname</>Ник устройства</g" $1
+sed -i "s/>Peer to Peer Audio</>Соединение точка-точка</g" $1
+sed -i "s/>Fax Support</>Поддержка факса</g" $1
+sed -i "s/>Audio Settings</>Голосовые настройки</g" $1
+sed -i "s/>Video Settings</>Настройки видео</g" $1
+sed -i "s/>Create Voicemail Box</>Создать голосовой ящик</g" $1
+sed -i "s/>Create Queue</>Создать очередь</g" $1
+sed -i "s/>Create Menu</>Создать меню</g" $1
+sed -i "s/>Create Softphone</>Создать Софтфон</g" $1
+sed -i "s/>Create SIP Device</Создать SIP устройство/g" $1
+sed -i "s/>Edit SIP Device</Настроить SIP устройство/g" $1
+sed -i "s/>Create Cellphone\/Landline</>Создать сотовую\/проводную линию связи</g" $1
+sed -i "s/>Create a Password</>Создать пароль</g" $1
+sed -i "s/>Create a Username</>Создать имя пользователя</g" $1
+sed -i "s/>Create and customize a unique phone system that matches your business needs.</>Создайте и настройте систему коммуникаций отвечающую потребностям Вашего бизнеса.</g" $1
+sed -i "s/>Add Carrier</>Добавить оператора</g" $1
+sed -i "s/>Audio Codecs</>Голосовые кодеки</g" $1
 sed -i "s/Are you sure you want to use a different carrier?/Вы уверены, что хотите самостоятельно настраивать маршрутизацию вызовов в городскую телефонную сеть?/g" $1
 sed -i "s/Use a different carrier/Внешние операторы/g" $1
 sed -i "s/Use my provider/Системный оператор/g" $1
