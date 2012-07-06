@@ -1,9 +1,10 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
+sed -i "s/Who is paying for calls made and phone numbers purchased on this account/Выберите плательщика за звонки совершаемые данной учетной записью/g" $1
+sed -i "s/>Available Apps</>Доступные приложения</g" $1
+sed -i "s/>First & Last Name</>Имя и Фамилия</g" $1
+sed -i "s/'last_name': 'Last Name'/'last_name': 'Фамилия'/g" $1
+sed -i "s/'first_name': 'First Name'/'first_name': 'Имя'/g" $1
 sed -i "s/>Sort by</>Сортировать по</g" $1
 sed -i "s/>Confirm Match</>Подтвердить совпадение</g" $1
 sed -i "s/>Minimum number of input</>Минимальное количество цифр</g" $1
@@ -270,7 +271,7 @@ sed -i "s/>Support Email</>Email поддержки</g" $1
 sed -i "s/>Support Number</>Телефон поддержки</g" $1
 sed -i "s/>Support Number: </>Телефон поддержки: </g" $1
 sed -i "s/Input the support number that will be inserted in the voicemail-to-email template/Введите номер телефона службы поддержки, который должен быть добавлен в шаблон письма с сообщением Голосовой почты/g" $1
-sed -i "s/>Voicemail To Email Template</>Шаблон сообщения Голосовой почты</g" $1
+sed -i "s/>Voicemail To Email Template</>Шаблон сообщения</g" $1
 sed -i "s/>White labeling</>Брэндинг</g" $1
 sed -i "s/>Monitoring</>Мониторинг</g" $1
 sed -i "s/'Are you sure you want to delete this callflow?'/'Вы уверены, что хотите удалить этот маршрут?'/g" $1
