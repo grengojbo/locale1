@@ -1,5 +1,15 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+###sed -i "s///g" $1
+sed -i "s/'sTitle': 'To (Dialed number)'/'sTitle': 'Куда (Набранный номер)'/g" $1
+sed -i "s/'sTitle': 'From (Caller ID)'/'sTitle': 'От (АОН)'/g" $1
+sed -i "s/'sTitle': 'Owner'/'sTitle': 'Хозяин'/g" $1
+sed -i "s/'sTitle': 'Hangup Cause'/'sTitle': 'Код завершения'/g" $1
+sed -i "s/'sTitle': 'Actions'/'sTitle': 'Действия'/g" $1
+sed -i "s/'sTitle': 'Duration'/'sTitle': 'Длительность'/g" $1
 sed -i "s/Who is paying for calls made and phone numbers purchased on this account/Выберите плательщика за звонки совершаемые данной учетной записью/g" $1
 sed -i "s/>Available Apps</>Доступные приложения</g" $1
 sed -i "s/>First & Last Name</>Имя и Фамилия</g" $1
