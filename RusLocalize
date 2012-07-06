@@ -1,9 +1,9 @@
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
 ###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
-###sed -i "s///g" $1
+sed -i "s/End Date: </Конец периода: </g" $1
+sed -i "s/'Start Date: </'Начало периода: </g" $1
+sed -i "s/'Total duration : '/'Общая длительность : '/g" $1
 sed -i "s/'sTitle': 'To (Dialed number)'/'sTitle': 'Куда (Набранный номер)'/g" $1
 sed -i "s/'sTitle': 'From (Caller ID)'/'sTitle': 'От (АОН)'/g" $1
 sed -i "s/'sTitle': 'Owner'/'sTitle': 'Хозяин'/g" $1
