@@ -1,0 +1,8 @@
+*.esproj
+*.cache
+test/
+nbproject/
+origin/development
+.idea/
+*.swf
+locatedb

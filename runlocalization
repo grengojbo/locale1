@@ -1,7 +1,25 @@
 ###  Just test
-updatedb
-updatedb
-awk '{ print length(), $0}' /var/www/localization/RusLocalize | sort -n -r | sudo cut -f2- -d' ' > /var/www/localization/RusLocalize.sort
-chmod a+x /var/www/localization/RusLocalize.sort
-locate ".html" | grep "/var/www/html/" | awk '{print "/var/www/localization/RusLocalize.sort " $1}' | sh
-locate ".js" | grep "/var/www/html/" | awk '{print "/var/www/localization/RusLocalize.sort " $1}' | sh
+# sudo aptitude install locate
+# sudo chmod 0777 /var/cache/locate
+#
+LOCALIZE_DIR='/home/jbo/src/locale1'
+WINKSTART_DIR='/home/jbo/src/winkstart'
+
+echo "UpdateDB ..."
+#updatedb --localpaths="$WINKSTART_DIR" --output="$LOCALIZE_DIR/locatedb"
+sudo updatedb -o $LOCALIZE_DIR/locatedb
+
+awk '{ print length(), $0}' $LOCALIZE_DIR/RusLocalize | sort -n -r | sudo cut -f2- -d' ' > $WINKSTART_DIR/RusLocalize.sort
+chmod a+x $WINKSTART_DIR/RusLocalize.sort
+cd $WINKSTART_DIR
+
+#locate --database=$LOCALIZE_DIR/locatedb ".html" | awk '{print "./RusLocalize.sort " $1}' | sh
+#locate --database=$LOCALIZE_DIR/locatedb ".js" | awk '{print "./RusLocalize.sort " $1}' | sh
+echo "Translate html ..."
+locate -d $LOCALIZE_DIR/locatedb ".html" | grep "$WINKSTART_DIR/" | awk '{print "./RusLocalize.sort " $1}' | sh
+echo "Translate js ..."
+locate -d $LOCALIZE_DIR/locatedb ".js" | grep "$WINKSTART_DIR/" | awk '{print "./RusLocalize.sort " $1}' | sh
+
+rm $WINKSTART_DIR/RusLocalize.sort
+
+cd $LOCALIZE_DIR

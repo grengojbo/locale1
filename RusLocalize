@@ -568,3 +568,4 @@ sed -i 's/"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries"/"sInfo": "По�
 sed -i 's/"sInfoEmpty": "Showing 0 to 0 of 0 entries"/"sInfoEmpty": "Показано 0 записей"/g' $1
 sed -i 's/"sEmptyTable": "No data available in table"/"sEmptyTable": "Данные отсутствуют"/g' $1
 sed -i 's/"Feature Codes"/"Функции"/g' $1
+sed -i 's/Invalid credentials, please check that your username and account name are correct\./Недопустимые учетные данные, пожалуйста введите правильный Логин, Парольи имя учетной записи\./g' $1
