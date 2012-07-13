@@ -46,7 +46,8 @@ sed -i "s/>Already Setup</>Уже настроен</g" $1
 sed -i "s/>Already have an invitation code?</У Вас уже есть код приглашения?/g" $1
 sed -i "s/Chose the owner of this voicemail box/Выберите пользователя для этого голосового ящика/g" $1
 sed -i "s/Choose the owner of this voicemail box/Выберите пользователя для этого голосового ящика/g" $1
-sed -i "s/Enter the PIN Number of this voicemail box/Введие пин-код для этого голосового ящика/g" $1
+#sed -i "s/Enter the PIN Number of this voicemail box/Введие пин-код для этого голосового ящика/g" $1
+sed -i "s/Enter the PIN Number of this voicemail box \(must be at least 4 digits\)/Введие пин-код для этого голосового ящика \(должно быть не мение 4 цыфр\)/g" $1
 sed -i "s/Number of this voicemail box/Номер этого ящика голосовой почты/g" $1
 sed -i "s/Friendly Name for this voicemail box/Удобное название голосового ящика/g" $1
 sed -i "s/Friendly name of this carrier/Удобное название этого оператора/g" $1
@@ -486,6 +487,7 @@ sed -i 's/>Refresh</>Обновить</g' $1
 sed -i 's/>Close</>Закрыть</g' $1
 sed -i 's/>In-House Calls</>Внутренние звонки</g' $1
 sed -i 's/>Outbound Calls</>Исходящие звонки</g' $1
+sed -i 's/>Two-Way Calls</>Исходящие звонки</g' $1
 sed -i 's/>Media File:</>Медиа файл:</g' $1
 sed -i 's/>Media File: </>Медиа файл: </g' $1
 sed -i 's/>Streamable:</>Потоковое:</g' $1
@@ -569,3 +571,16 @@ sed -i 's/"sInfoEmpty": "Showing 0 to 0 of 0 entries"/"sInfoEmpty": "Показ�
 sed -i 's/"sEmptyTable": "No data available in table"/"sEmptyTable": "Данные отсутствуют"/g' $1
 sed -i 's/"Feature Codes"/"Функции"/g' $1
 sed -i 's/Invalid credentials, please check that your username and account name are correct\./Недопустимые учетные данные, пожалуйста введите правильный Логин, Парольи имя учетной записи\./g' $1
+#sed -i "s/Warning! This is going to refresh the page\.//g" $1
+#sed -i "s/Do you really want to use sky5.com.ua's account?//g" $1
+#sed -i "s/You are now using 089.com.ua's account//g" $1
+#sed -i "s/Password updated!//g" $1
+#sed -i "s/Masquerading finished, you're now using your root account.//g" $1
+#sed -i "s/>  Flat-Rate Two-Way Calling<//g" $1
+#sed -i "s/>simultaneous two-way calls to the US-48 at <//g" $1
+#sed -i "s/>Edit Cellphone<//g" $1
+#sed -i "s/>Create Cellphone<//g" $1
+#sed -i "s/>When you check this box, calls from the user's own extension to themselves will ring the extension. If this box isn't checked, calls from the user's own extension to themselves will go to their voicemail.<//g" $1
+#sed -i "s///g" $1
+#sed -i "s///g" $1
+###sed -i "s///g" $1
